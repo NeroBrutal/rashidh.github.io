@@ -1,5 +1,314 @@
 {
   "name": "Mohamed Rashidh",
+  "about_me": "Welcome to my portfolio! Here, I present my professional journey, technical expertise, and academic achievements in the fields of Artificial Intelligence and Software Engineering. With a strong foundation in Python backend development and hands-on experience in building AI-driven systems, I specialize in Generative AI, automation workflows, and scalable API solutions. My education at SLIIT City University strengthened my problem-solving, research, and software design capabilities, enabling me to bridge theory and real-world applications. Explore my projects to see how I apply modern technologies like LangChain, FastAPI, Docker, and n8n to deliver intelligent and automated solutions. Feel free to connect with me for collaborations or opportunities!",
   "age": 25,
-  "location": "Abu Dhabi, UAE"
+  "location": "Abu Dhabi, UAE",
+  "programming_languages": [
+    {
+      "name": "Python",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+    },
+    {
+      "name": "AWS",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    },
+    {
+      "name": "C++",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+    },
+    {
+      "name": "Java",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "Linux",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+    },
+    {
+      "name": "MySQL",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+    },
+    {
+      "name": "NPM",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+      "name": "PHP",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+    },
+    {
+      "name": "React",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+    },
+    {
+      "name": "CSS3",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "name": ".NET Core",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+    },
+    {
+      "name": "Heroku",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg"
+    }
+  ],
+  "hobbies": ["Reading", "Traveling", "Gaming"],
+  "roles": [
+    "AI Engineer",
+    "Python Backend Developer",
+    "Generative AI Specialist",
+    "Automation Engineer (n8n)"
+  ],
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/mohamed-rashidh-bb948121b",
+    "github": "https://github.com/NeroBrutal",
+    "twitter": "https://twitter.com/mohamed77068570?s=21&t=r7SL2Gkmuw5SNKNzGlVtkg",
+    "instagram": "https://instagram.com/___r.a.s.h.i.d.h___?igshid=MjEwN2IyYWYwYw==",
+    "facebook": "https://www.facebook.com/profile.php?id=100008542111766&mibextid=LQQJ4d"
+  },
+  "technologies": [
+    {
+      "category": "Client Side",
+      "technologies": [
+        {
+          "name": "HTML",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        },
+        {
+          "name": "CSS",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        },
+        {
+          "name": "JavaScript",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        },
+        {
+          "name": "TypeScript",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+        },
+        {
+          "name": "React",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+        },
+        {
+          "name": "Tailwind",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+        }
+      ]
+    },
+    {
+      "category": "Server Side",
+      "technologies": [
+        {
+          "name": "PHP",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+        },
+        {
+          "name": "ASP.NET",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+        },
+        {
+          "name": "Node.js",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "name": "Express JS",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+        },
+        {
+          "name": "FastAPI",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+        },
+        {
+          "name": "Django",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+        }
+      ]
+    },
+    {
+      "category": "Database",
+      "technologies": [
+        {
+          "name": "MySQL",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+        },
+        {
+          "name": "MongoDB",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        },
+        {
+          "name": "Firebase",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "name": "Oracle",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+        },
+        {
+          "name": "Supabase",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+        },
+        {
+          "name": "Redis",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Project Control",
+      "technologies": [
+        {
+          "name": "Github",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        },
+        {
+          "name": "GitLab",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Graphics",
+      "technologies": [
+        {
+          "name": "Figma",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+        },
+        {
+          "name": "Maya",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg"
+        }
+      ]
+    },
+    {
+      "category": "Programming Languages",
+      "technologies": [
+        {
+          "name": "Java",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+        },
+        {
+          "name": "C",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+        },
+        {
+          "name": "C++",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+        },
+        {
+          "name": "Python",
+          "imageSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+        }
+      ]
+    }
+  ],
+  "sections": {
+    "education": {
+      "title": "Educational Journey",
+      "items": [
+        {
+          "year": "2003-2014",
+          "startDate": "2003",
+          "endDate": "2014",
+          "title": "St. Joseph's College, Negombo",
+          "summary": "Completed primary and secondary education with strong academic performance, building a solid foundation in analytical and logical skills.",
+          "details": [
+            "Studied from Grade 1 to Grade 11 at St. Joseph's College, Negombo.",
+            "Successfully completed the Sri Lankan Ordinary Level examination.",
+            "Developed strong problem-solving and time-management abilities.",
+            "Participated in academic and extracurricular activities, fostering teamwork and leadership.",
+            "Laid the foundation for pursuing higher studies in science and technology."
+          ],
+          "logo": "st.joseph.jpg"
+        },
+        {
+          "year": "2015-2018",
+          "startDate": "2015",
+          "endDate": "2018",
+          "title": "St. Peter's College, Negombo",
+          "summary": "Completed Advanced Level studies in Physical Science, strengthening mathematical and analytical problem-solving capabilities.",
+          "details": [
+            "Specialized in subjects such as Combined Mathematics, Physics, and Chemistry.",
+            "Developed logical reasoning and quantitative analysis skills.",
+            "Engaged in science-related clubs and student projects.",
+            "Cultivated discipline and teamwork through group-based learning.",
+            "Built a foundation that inspired a career in software engineering and AI."
+          ],
+          "logo": "st.peters.png"
+        },
+        {
+          "year": "2021-2024",
+          "startDate": "2021",
+          "endDate": "2024",
+          "title": "SLIIT City University",
+          "summary": "Earned a B.Sc. (Hons) in Computer Science & Software Engineering with first-class results, focusing on AI and backend software development.",
+          "details": [
+            "Completed an honors degree program in Computer Science and Software Engineering.",
+            "Studied core modules in programming, databases, algorithms, and software design.",
+            "Worked on a final-year research project applying AI to real-world problem-solving.",
+            "Developed teamwork and project management skills through collaborative coursework.",
+            "Gained practical experience building full-stack applications with modern frameworks.",
+            "Excelled in research methodology and comparative integrated systems modules."
+          ],
+          "logo": "SLIIT_Logo_.png"
+        }
+      ]
+    },
+    "work_experience": {
+      "title": "Work Experience",
+      "items": [
+        {
+          "year": "Aug 2024 - Present",
+          "startDate": "2024-08-01",
+          "endDate": "Present",
+          "title": "AI Engineer (Python Backend Engineer)",
+          "company": "MVP Application & Game Design L.L.C.",
+          "location": "Abu Dhabi, United Arab Emirates",
+          "summary": "Designing and building AI-powered backend systems for Araby.AI using Python, FastAPI, and OpenAI integrations. Focused on generative AI pipelines, real-time sockets, and automation with n8n.",
+          "details": [
+            "Developed and deployed scalable backend APIs using Python and FastAPI for AI-driven applications.",
+            "Created API endpoints for image-to-video, text-to-video, and generative image tools.",
+            "Integrated OpenAI, Replicate, and Stable Diffusion models for advanced creative automation.",
+            "Implemented video and image processing pipelines using FFmpeg for resizing, trimming, and optimization.",
+            "Built real-time communication systems using WebSocket and Redis for live AI responses.",
+            "Automated AI pipeline workflows using n8n for task scheduling and orchestration.",
+            "Deployed and managed containerized applications on AWS EC2 with Docker and CI/CD pipelines.",
+            "Collaborated with the AI research team to optimize prompt design and reduce inference time.",
+            "Prompt engineering and model fine-tuning for improved AI output quality.",
+            "Designing system architecture for AI services to ensure scalability and reliability.",
+            "Developing customized AI tools using multiple LLMs and generative models."
+          ]
+        },
+        {
+          "year": "2019 - 2021",
+          "startDate": "2019-01-01",
+          "endDate": "2021-12-31",
+          "title": "Customer Service and Technical Support",
+          "company": "Benkram Tower",
+          "location": "Abu Dhabi, United Arab Emirates",
+          "summary": "Provided technical and customer support, ensuring service quality, system uptime, and effective communication with clients.",
+          "details": [
+            "Assisted customers by troubleshooting hardware and software issues efficiently.",
+            "Maintained service stability by performing system diagnostics and updates.",
+            "Collaborated with operations teams to improve service workflows and response time.",
+            "Recorded and tracked customer issues for analysis and improvement.",
+            "Developed communication and multitasking skills in a fast-paced environment."
+          ]
+        }
+      ]
+    }
+  }
 }

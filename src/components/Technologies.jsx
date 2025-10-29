@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import data from "../data/data.json";
 
 const TechnologyItem = ({ name, imageSrc }) => (
   <motion.div
@@ -15,138 +16,7 @@ const TechnologyItem = ({ name, imageSrc }) => (
 );
 
 const Technologies = () => {
-  const technologiesData = [
-    {
-      category: "Client Side",
-      technologies: [
-        {
-          name: "HTML",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        },
-        {
-          name: "CSS",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        },
-        {
-          name: "JavaScript",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        },
-        {
-          name: "React",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
-        },
-        {
-          name: "Bootstrap",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-        },
-        {
-          name: "Tailwind",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
-        },
-      ],
-    },
-    {
-      category: "Server Side",
-      technologies: [
-        {
-          name: "PHP",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-        },
-        {
-          name: "ASP.NET",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
-        },
-        {
-          name: "Node.js",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        },
-        {
-          name: "Express JS",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        },
-      ],
-    },
-    {
-      category: "Database",
-      technologies: [
-        {
-          name: "SQL",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-        },
-        {
-          name: "NoSQL",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        },
-      ],
-    },
-    {
-      category: "Project Control",
-      technologies: [
-        {
-          name: "Github",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        },
-        {
-          name: "HEROKU",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg",
-        },
-      ],
-    },
-    {
-      category: "Graphics",
-      technologies: [
-        {
-          name: "Figma",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-        },
-        {
-          name: "Maya",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maya/maya-original.svg",
-        },
-      ],
-    },
-    {
-      category: "Programming Languages",
-      technologies: [
-        {
-          name: "Java",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
-        },
-        {
-          name: "C",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-        },
-        {
-          name: "C++",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-        },
-        {
-          name: "Python",
-          imageSrc:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-        },
-      ],
-    },
-  ];
+  const technologiesData = data.technologies;
   const controls = useAnimation();
   const sectionRef = useRef();
   const [isInView, setIsInView] = useState(false);
@@ -174,14 +44,15 @@ const Technologies = () => {
 
       <div
         ref={sectionRef}
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-12 justify-center pb-8 pl-5 pr-5"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-20 gap-y-20 justify-center pb-8 pl-5 pr-5"
       >
         {technologiesData.map((category, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : controls}
-            transition={{ duration: 1, delay: index * 0.5 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.2 }} // 👈 animates again when re-entering view
+            transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             <h2 className="text-lg font-semibold mb-4">{category.category}</h2>
             {category.technologies.map((tech, techIndex) => (
