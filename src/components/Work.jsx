@@ -35,6 +35,7 @@ const Work = () => {
 
   return (
     <div id="work" className="max-w-screen-lg m-auto md:pl-20 p-2 py-16">
+      {/* Section title */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,6 +45,8 @@ const Work = () => {
           About Me 🚀
         </h1>
       </motion.h1>
+
+      {/* About me paragraph */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -51,18 +54,32 @@ const Work = () => {
       >
         <p className="text-center py-6">{aboutMe}</p>
       </motion.p>
-      {/* Programming language icons */}
-      <div className="flex justify-center flex-wrap gap-3 md:px-7">
-        {languages.map((lang, index) => (
-          <img
-            key={index}
-            src={lang.icon}
-            alt={lang.name}
-            title={lang.name}
-            className="h-12 w-12 md:h-14 md:w-14 object-contain"
-          />
-        ))}
+
+      {/* Scrolling Technology Icons */}
+      <div className="overflow-hidden py-10 relative">
+        <motion.div
+          className="flex gap-8"
+          animate={{
+            x: ["0%", "-50%"], // move halfway left for loop
+          }}
+          transition={{
+            ease: "linear",
+            duration: 15, // control speed
+            repeat: Infinity,
+          }}
+        >
+          {[...languages, ...languages].map((lang, index) => (
+            <img
+              key={index}
+              src={lang.icon}
+              alt={lang.name}
+              title={lang.name}
+              className="h-16 w-16 md:h-20 md:w-20 object-contain"
+            />
+          ))}
+        </motion.div>
       </div>
+
       {/* Dynamic Sections */}
       {Object.entries(sections).map(([key, section]) => (
         <div key={key}>
@@ -79,6 +96,7 @@ const Work = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
+              {/* Logo */}
               {item.logo && (
                 <motion.img
                   src={getLogo(item.logo)}
@@ -91,6 +109,7 @@ const Work = () => {
               )}
 
               <div>
+                {/* Title */}
                 <motion.h4
                   className="text-xl font-semibold text-gray-800"
                   initial={{ opacity: 0, x: -20 }}
@@ -100,6 +119,7 @@ const Work = () => {
                   {item.title}
                 </motion.h4>
 
+                {/* Year + Duration */}
                 <motion.p
                   className="text-gray-500 text-sm"
                   initial={{ opacity: 0 }}
@@ -110,6 +130,19 @@ const Work = () => {
                   {calculateDuration(item.startDate, item.endDate)}
                 </motion.p>
 
+                {/* Location */}
+                {item.location && (
+                  <motion.p
+                    className="text-gray-500 text-sm font-bold pt-1"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.4, delay: 0.35 }}
+                  >
+                    {item.location}
+                  </motion.p>
+                )}
+
+                {/* Summary */}
                 {item.summary && (
                   <motion.p
                     className="mt-2 text-gray-700"
@@ -121,6 +154,7 @@ const Work = () => {
                   </motion.p>
                 )}
 
+                {/* Details */}
                 {Array.isArray(item.details) && (
                   <ul className="list-disc list-inside mt-3 space-y-2">
                     {item.details.map((point, i) => (
